@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --green: #64ffda;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+  body {
+    @apply bg-navy text-slate font-sans antialiased;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    line-height: 1.5;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-lightest-slate font-semibold;
+  }
+
+  h1 {
+    @apply text-5xl sm:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply inline-block text-light-slate relative py-2.5 px-[10px] text-sm hover:text-green transition-colors duration-300;
+  }
+
+  .nav-number {
+    @apply text-green mr-[5px] text-xs;
+  }
+
+  .section-heading {
+    @apply flex items-center w-full text-2xl text-lightest-slate font-semibold whitespace-nowrap my-4 sm:my-10;
+  }
+
+  .section-heading::after {
+    content: "";
+    @apply ml-4 h-[1px] w-full bg-lightest-navy;
+  }
+
+  .section-heading .number {
+    @apply text-green mr-2 text-xl font-mono;
+  }
+
+  .green-link {
+    @apply text-green hover:underline transition-all;
+  }
+  
+  .fadein {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .fadein.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .delay-100 {
+    transition-delay: 100ms;
+  }
+  
+  .delay-200 {
+    transition-delay: 200ms;
+  }
+  
+  .delay-300 {
+    transition-delay: 300ms;
+  }
+  
+  .delay-400 {
+    transition-delay: 400ms;
+  }
+  
+  .delay-500 {
+    transition-delay: 500ms;
+  }
 }
