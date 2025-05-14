@@ -36,7 +36,7 @@ const Hero: React.FC<HeroProps> = ({ showContent }) => {
           Thisun Senevirathne.
         </h1>
         <h2 className={`text-4xl sm:text-5xl md:text-6xl font-bold text-slate mb-6 transition-all duration-500 fadein delay-300 ${showContent ? 'show' : ''}`}>
-          I'm a student and social media enthusiast.
+          I build things for the web.
         </h2>
         <p className={`max-w-xl text-slate mb-12 transition-all duration-500 fadein delay-400 ${showContent ? 'show' : ''}`}>
           Currently pursuing my studies at the University of Westminster, 
