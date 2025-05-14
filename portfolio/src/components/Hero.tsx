@@ -28,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({ showContent }) => {
       ref={scrollRef}
       className="min-h-screen flex flex-col justify-center pt-16 md:pt-0"
     >
-      <div>
+      <div className="max-w-3xl">
         <p className={`font-mono text-green mb-5 transition-all duration-500 fadein delay-100 ${showContent ? 'show' : ''}`}>
           Hi, my name is
         </p>
@@ -36,12 +36,12 @@ const Hero: React.FC<HeroProps> = ({ showContent }) => {
           Thisun Senevirathne.
         </h1>
         <h2 className={`text-4xl sm:text-5xl md:text-6xl font-bold text-slate mb-6 transition-all duration-500 fadein delay-300 ${showContent ? 'show' : ''}`}>
-          I build things for the web.
+          Computer Science Student & Aspiring Full Stack Developer.
         </h2>
-        <p className={`max-w-xl text-slate mb-12 transition-all duration-500 fadein delay-400 ${showContent ? 'show' : ''}`}>
+        <p className={`max-w-xl text-slate mb-12 leading-relaxed text-lg transition-all duration-500 fadein delay-400 ${showContent ? 'show' : ''}`}>
+          I build accessible, pixel-perfect digital experiences for the web. 
           Currently pursuing my studies at the University of Westminster, 
-          I'm passionate about helping small and medium-sized businesses build their online 
-          presence through effective social media marketing strategies.
+          specializing in creating elegant solutions for small and medium-sized businesses.
         </p>
         <div className={`transition-all duration-500 fadein delay-500 ${showContent ? 'show' : ''}`}>
           <button 

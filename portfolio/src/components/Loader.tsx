@@ -21,7 +21,7 @@ const Loader: React.FC = () => {
   
   return (
     <div className="fixed inset-0 flex flex-col items-center justify-center bg-navy z-50">
-      <div className="scale-150 mb-10 animate-pulse">
+      <div className="scale-[2.5] mb-12 animate-pulse">
         <Logo />
       </div>
       
