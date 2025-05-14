@@ -16,6 +16,13 @@ interface Project {
 
 const featuredProjects: Project[] = [
   {
+    title: "Estate Agent Platform",
+    description: "A responsive Single Page Application for an estate agent platform using React.js. Implemented dynamic property search functionality with JSON data handling, UI enhancements with React components, and interactive features like favorites management. Ensured responsiveness with CSS Grid/Flexbox and optimized security with client-side protections.",
+    tags: ["React.js", "HTML5", "CSS3", "JavaScript", "JSON", "Responsive Design"],
+    github: "https://github.com/Thisun-17/estate-agent-platform",
+    image: "https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
     title: "Personal Finance Tracker",
     description: "A comprehensive finance tracking application built with Python and Tkinter. Features include transaction management, input validation, and JSON-based data storage. The application allows users to track income, expenses, and provides financial insights.",
     tags: ["Python", "Tkinter", "JSON", "Financial Management"],
@@ -55,13 +62,14 @@ const Projects: React.FC<ProjectsProps> = ({ showContent }) => {
       }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -72,73 +80,75 @@ const Projects: React.FC<ProjectsProps> = ({ showContent }) => {
         <span className="number">03.</span>Some Things I've Built
       </h2>
       
-      <div className="mt-12 space-y-24">
-        {featuredProjects.map((project, index) => (
-          <div 
-            key={index}
-            className={`relative grid md:grid-cols-12 items-center gap-6 md:gap-10 transition-all duration-500 fadein ${
-              isVisible ? `show delay-${(index + 1) * 100}` : ''
-            }`}
-          >
-            <div className={`md:col-span-7 ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
-              <div className="relative h-0 pb-[56.25%] overflow-hidden rounded-md shadow-xl bg-green/20">
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {featuredProjects.map((project, index) => {
+          const linkUrl = project.github || project.external || "#";
+          
+          return (
+            <a 
+              key={index}
+              href={linkUrl}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={`group block overflow-hidden bg-light-navy rounded-lg transition-all duration-500 transform hover:-translate-y-2 hover:shadow-[0_20px_80px_-15px_rgba(100,255,218,0.2)] fadein ${
+                isVisible ? `show delay-${(index + 1) * 100}` : ''
+              }`}
+            >
+              <div className="relative h-48 overflow-hidden">
                 {project.image && (
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-80 hover:opacity-100 transition-opacity"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 )}
-              </div>
-            </div>
-            
-            <div className={`md:col-span-5 ${index % 2 === 0 ? 'md:order-2 md:text-right' : 'md:order-1'}`}>
-              <p className="font-mono text-green text-sm mb-1">Featured Project</p>
-              <h3 className="text-lightest-slate text-2xl font-semibold mb-4">
-                {project.title}
-              </h3>
-              
-              <div className="relative z-10 p-6 bg-light-navy rounded-md shadow-xl">
-                <p className="text-slate">{project.description}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-light-navy to-transparent opacity-70"></div>
               </div>
               
-              <ul className={`flex flex-wrap gap-x-4 gap-y-2 my-6 text-xs font-mono text-slate ${
-                index % 2 === 0 ? 'md:justify-end' : ''
-              }`}>
-                {project.tags.map((tag, tagIndex) => (
-                  <li key={tagIndex}>{tag}</li>
-                ))}
-              </ul>
-              
-              <div className={`flex gap-4 text-lightest-slate ${
-                index % 2 === 0 ? 'md:justify-end' : ''
-              }`}>
-                {project.github && (
-                  <a 
-                    href={project.github} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hover:text-green transition-colors"
-                    aria-label={`GitHub - ${project.title}`}
-                  >
-                    <Github size={20} />
-                  </a>
-                )}
-                {project.external && (
-                  <a 
-                    href={project.external} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hover:text-green transition-colors"
-                    aria-label={`External Link - ${project.title}`}
-                  >
-                    <ExternalLink size={20} />
-                  </a>
-                )}
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-lightest-slate text-xl font-semibold group-hover:text-green transition-colors">
+                    {project.title}
+                  </h3>
+                  
+                  <div className="flex gap-3 text-lightest-slate">
+                    {project.github && (
+                      <span 
+                        className="group-hover:text-green transition-colors"
+                        aria-label={`GitHub - ${project.title}`}
+                      >
+                        <Github size={18} />
+                      </span>
+                    )}
+                    {project.external && (
+                      <span 
+                        className="group-hover:text-green transition-colors"
+                        aria-label={`External Link - ${project.title}`}
+                      >
+                        <ExternalLink size={18} />
+                      </span>
+                    )}
+                  </div>
+                </div>
+                
+                <p className="text-slate text-sm mb-6 line-clamp-3">{project.description}</p>
+                
+                <div className="mt-auto">
+                  <ul className="flex flex-wrap gap-2">
+                    {project.tags.map((tag, tagIndex) => (
+                      <li 
+                        key={tagIndex} 
+                        className="text-xs font-mono px-2 py-1 bg-lightest-navy rounded-full text-green"
+                      >
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            </a>
+          );
+        })}
       </div>
     </section>
   );

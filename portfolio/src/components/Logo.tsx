@@ -10,13 +10,13 @@ const Logo: React.FC = () => {
         xmlns="http://www.w3.org/2000/svg"
         className="fill-green group-hover:fill-white transition-colors duration-300"
       >
-        <path 
-          d="M20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0zm0 5a4 4 0 110 8 4 4 0 010-8zm8 22a4 4 0 110-8 4 4 0 010 8zm0-16a4 4 0 110-8 4 4 0 010 8zm-16 16a4 4 0 110-8 4 4 0 010 8zm0-16a4 4 0 110-8 4 4 0 010 8z"
+        <polygon 
+          points="20,0 38.5,10 38.5,30 20,40 1.5,30 1.5,10"
           fillRule="evenodd"
           clipRule="evenodd"
         />
       </svg>
-      <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-navy font-bold text-lg">T</span>
+      <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-navy font-extrabold text-xl">T</span>
     </div>
   );
 };
