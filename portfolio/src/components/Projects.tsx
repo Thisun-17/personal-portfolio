@@ -13,6 +13,7 @@ interface Project {
 }
 
 const featuredProjects: Project[] = [
+  
   {
     title: "Estate Agent Platform",
     description: "A responsive Single Page Application for an estate agent platform using React.js. Implemented dynamic property search functionality with JSON data handling, UI enhancements with React components, and interactive features like favorites management. Ensured responsiveness with CSS Grid/Flexbox and optimized security with client-side protections.",
@@ -40,6 +41,13 @@ const featuredProjects: Project[] = [
     tags: ["Java", "File I/O", "CLI", "Education"],
     github: "https://github.com/Thisun-17/student-management-system",
     image: "https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    title: "Content Saver - Chrome Extension",
+    description: "A feature-rich Chrome extension developed using JavaScript, HTML, and CSS that enhances web browsing productivity by allowing users to capture, organize, and retrieve web content.",
+    tags: ["JavaScript", "HTML", "CSS", "Chrome Extension", "Browser API"],
+    github: "https://github.com/Thisun-17/content-saver",
+    image: "https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   }
 ];
 
