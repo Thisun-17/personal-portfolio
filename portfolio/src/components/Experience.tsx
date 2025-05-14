@@ -15,7 +15,7 @@ const experienceData: ExperienceItem[] = [
   {
     company: "University of Westminster",
     position: "Student",
-    date: "2022 - Present",
+    date: "2024 - Present",
     details: [
       "Pursuing a degree in higher education with a focus on digital marketing and social media trends",
       "Conducting research on effective strategies for small business online presence",
@@ -26,7 +26,7 @@ const experienceData: ExperienceItem[] = [
   {
     company: "A/Walisinghe Harischandra College",
     position: "Student",
-    date: "2010 - 2022",
+    date: "2014 - 2023",
     details: [
       "Completed secondary education with focus on technology and business studies",
       "Participated in extracurricular activities including debate club and tech workshops",
