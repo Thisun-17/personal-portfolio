@@ -1,14 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-interface AboutProps {
-  showContent: boolean;
-}
-
-const About: React.FC<AboutProps> = ({ showContent }) => {
+const About: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const currentSection = sectionRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -21,13 +18,13 @@ const About: React.FC<AboutProps> = ({ showContent }) => {
       }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (currentSection) {
+      observer.observe(currentSection);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSection) {
+        observer.unobserve(currentSection);
       }
     };
   }, []);
