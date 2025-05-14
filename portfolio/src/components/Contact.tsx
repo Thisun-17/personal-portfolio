@@ -1,14 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-interface ContactProps {
-  showContent: boolean;
-}
-
-const Contact: React.FC<ContactProps> = ({ showContent }) => {
+const Contact: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const node = sectionRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -21,13 +18,13 @@ const Contact: React.FC<ContactProps> = ({ showContent }) => {
       }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (node) {
+      observer.observe(node);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (node) {
+        observer.unobserve(node);
       }
     };
   }, []);
