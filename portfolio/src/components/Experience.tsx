@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-interface ExperienceProps {
-  showContent: boolean;
-}
+// Removed unused ExperienceProps interface
 
 interface ExperienceItem {
   company: string;
@@ -47,12 +45,13 @@ const experienceData: ExperienceItem[] = [
   }
 ];
 
-const Experience: React.FC<ExperienceProps> = ({ showContent }) => {
+const Experience: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const currentSection = sectionRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -65,13 +64,13 @@ const Experience: React.FC<ExperienceProps> = ({ showContent }) => {
       }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (currentSection) {
+      observer.observe(currentSection);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSection) {
+        observer.unobserve(currentSection);
       }
     };
   }, []);
