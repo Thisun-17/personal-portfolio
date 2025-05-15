@@ -18,6 +18,7 @@ const featuredProjects: Project[] = [
     title: "Estate Agent Platform",
     description: "A responsive Single Page Application for an estate agent platform using React.js. Implemented dynamic property search functionality with JSON data handling, UI enhancements with React components, and interactive features like favorites management. Ensured responsiveness with CSS Grid/Flexbox and optimized security with client-side protections.",
     tags: ["React.js", "HTML5", "CSS3", "JavaScript", "JSON", "Responsive Design"],
+    external: "https://sdg15-project.netlify.app",
     github: "https://github.com/Thisun-17/estate-agent-platform",
     image: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
