@@ -36,12 +36,12 @@ const Hero: React.FC<HeroProps> = ({ showContent }) => {
           Thisun Senevirathne.
         </h1>
         <h2 className={`text-4xl sm:text-5xl md:text-6xl font-bold text-slate mb-6 transition-all duration-500 fadein delay-300 ${showContent ? 'show' : ''}`}>
-          Computer Science Student & Aspiring Full Stack Developer.
+          Computer Science Student & Aspiring Software Engineer.
         </h2>
         <p className={`max-w-xl text-slate mb-12 leading-relaxed text-lg transition-all duration-500 fadein delay-400 ${showContent ? 'show' : ''}`}>
-          I build accessible, pixel-perfect digital experiences for the web. 
-          Currently pursuing my studies at the University of Westminster, 
-          specializing in creating elegant solutions for small and medium-sized businesses.
+          I enjoy building web applications and learning new technologies through hands-on projects. 
+          Computer Science student at Informatics Institute of Technology, Colombo, with experience in full-stack development, 
+          from creating REST APIs to building user interfaces.
         </p>
         <div className={`transition-all duration-500 fadein delay-500 ${showContent ? 'show' : ''}`}>
           <button 
