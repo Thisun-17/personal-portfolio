@@ -20,18 +20,8 @@ const experienceData: ExperienceItem[] = [
       "Working on collaborative projects",
       "Building technical expertise across multiple programming languages and frameworks",
     ]
-  },
-  {
-    company: "A/Walisinghe Harischandra College",
-    position: "Student",
-    date: "2014 - 2023",
-    details: [
-      "Completed secondary education with focus on technology and business studies",
-      "Participated in extracurricular activities including debate club and tech workshops",
-      "Led student initiatives for digital awareness and online safety",
-      "Achieved academic excellence in business and technology subjects"
-    ]
   }
+  
 ];
 
 const Experience: React.FC = () => {
