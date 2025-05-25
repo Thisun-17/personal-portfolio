@@ -31,17 +31,6 @@ const experienceData: ExperienceItem[] = [
       "Led student initiatives for digital awareness and online safety",
       "Achieved academic excellence in business and technology subjects"
     ]
-  },
-  {
-    company: "Freelance",
-    position: "Social Media Consultant",
-    date: "2020 - Present",
-    details: [
-      "Providing social media strategy consultation for small local businesses",
-      "Helping clients establish and grow their online presence through targeted content",
-      "Analyzing engagement metrics and optimizing social media campaigns",
-      "Creating content calendars and publishing schedules for maximum impact"
-    ]
   }
 ];
 
