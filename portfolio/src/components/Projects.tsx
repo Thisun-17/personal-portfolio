@@ -25,28 +25,28 @@ const featuredProjects: Project[] = [
     title: "Personal Finance Tracker",
     description: "A comprehensive finance tracking application built with Python and Tkinter. Features include transaction management, input validation, and JSON-based data storage. The application allows users to track income, expenses, and provides financial insights.",
     tags: ["Python", "Tkinter", "JSON", "Financial Management"],
-    github: "https://github.com/Thisun-17/finance-tracker",
+    github: "https://github.com/Thisun-17/Python",
     image: "https://images.pexels.com/photos/5483075/pexels-photo-5483075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     title: "SDG 15 - Life on Land",
     description: "A responsive website focused on Sustainable Development Goal 15: Life on Land. Built with modern web technologies, featuring responsive design, CSS animations, and comprehensive information about environmental conservation.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-    external: "https://sdg15-project.netlify.app",
+    github: "https://github.com/Thisun-17/Web-Design-and-Development",
     image: "https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     title: "Student Management System",
     description: "A Java-based student management system using file I/O for data storage. Features include student registration, module mark management, and academic performance analysis. The CLI interface provides a straightforward way to manage student records.",
     tags: ["Java", "File I/O", "CLI", "Education"],
-    github: "https://github.com/Thisun-17/student-management-system",
+    github: "https://github.com/Thisun-17/Java-",
     image: "https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     title: "Content Saver - Chrome Extension",
     description: "A feature-rich Chrome extension developed using JavaScript, HTML, and CSS that enhances web browsing productivity by allowing users to capture, organize, and retrieve web content.",
     tags: ["JavaScript", "HTML", "CSS", "Chrome Extension", "Browser API"],
-    github: "https://github.com/Thisun-17/content-saver",
+    github: "https://github.com/Thisun-17/Highlight-text-Chrome-extension-",
     image: "https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   }
 ];
