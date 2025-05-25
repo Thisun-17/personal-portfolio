@@ -15,10 +15,10 @@ const experienceData: ExperienceItem[] = [
     position: "Student",
     date: "2024 - Present",
     details: [
-      "Pursuing a degree in higher education with a focus on digital marketing and social media trends",
-      "Conducting research on effective strategies for small business online presence",
-      "Participating in workshops and seminars focused on digital marketing",
-      "Collaborating with peers on various projects related to social media marketing",
+      "Pursuing B.Sc. (Hons) Computer Science with focus on software development and system design",
+      "Developing practical skills through hands-on projects in full-stack development, database management, and API development",
+      "Working on collaborative projects",
+      "Building technical expertise across multiple programming languages and frameworks",
     ]
   },
   {
