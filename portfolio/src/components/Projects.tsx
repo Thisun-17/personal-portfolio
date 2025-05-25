@@ -13,7 +13,7 @@ interface Project {
 }
 
 const featuredProjects: Project[] = [
-  
+ 
   {
     title: "Estate Agent Platform",
     description: "A responsive Single Page Application for an estate agent platform using React.js. Implemented dynamic property search functionality with JSON data handling, UI enhancements with React components, and interactive features like favorites management. Ensured responsiveness with CSS Grid/Flexbox and optimized security with client-side protections.",
@@ -48,6 +48,27 @@ const featuredProjects: Project[] = [
     tags: ["JavaScript", "HTML", "CSS", "Chrome Extension", "Browser API"],
     github: "https://github.com/Thisun-17/Highlight-text-Chrome-extension-",
     image: "https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    title: "Bookstore RESTful API",
+    description: "A comprehensive RESTful API for bookstore management built with Java and JAX-RS. Features include CRUD operations for books, authors, and customers, with thorough API testing using Postman. Demonstrates strong backend development skills with proper REST architecture and data validation.",
+    tags: ["Java", "JAX-RS", "REST API", "Postman", "Backend Development"],
+    github: "https://github.com/Thisun-17/Java-",
+    image: "https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    title: "Full-Stack Ticket Management System",
+    description: "A complete ticket management solution combining React.js frontend, Node.js backend, and Java CLI interface. Features include ticket creation, assignment, status tracking, and user management. Showcases full-stack development capabilities with modern web technologies.",
+    tags: ["React.js", "Node.js", "Java", "Full-Stack", "CLI", "Ticket Management"],
+    github: "https://github.com/Thisun-17/Java-",
+    image: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    title: "Patas.lk Service Marketplace",
+    description: "A mobile service marketplace application developed with Flutter and Firebase as part of a 6-person collaborative team. Features include service listings, user authentication, real-time messaging, and location-based services. Demonstrates mobile development skills and team collaboration using Git version control.",
+    tags: ["Flutter", "Firebase", "Mobile Development", "Git", "Team Collaboration"],
+    github: "https://github.com/Thisun-17/Flutter",
+    image: "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   }
 ];
 
