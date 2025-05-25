@@ -11,7 +11,7 @@ interface ExperienceItem {
 
 const experienceData: ExperienceItem[] = [
   {
-    company: "University of Westminster",
+    company: "Informatics Institute of Technology",
     position: "Student",
     date: "2024 - Present",
     details: [
