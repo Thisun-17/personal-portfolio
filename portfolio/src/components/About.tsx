@@ -40,17 +40,20 @@ const About: React.FC = () => {
           <div className={`md:col-span-2 transition-all duration-500 fadein delay-200 ${isVisible ? 'show' : ''}`}>
             <div className="space-y-4 text-slate">
               <p>
-                Hello! I'm Thisun, a passionate student at the University of Westminster, with my roots at A/Walisinghe 
-                Harischandra College. I'm deeply fascinated by the dynamic world of social media marketing.
+                Hello! I'm Thisun, a Computer Science student at Informatics Institute of Technology, Colombo. 
+                I enjoy building software solutions and exploring new technologies through hands-on development projects.
+
               </p>
               <p>
-                I love exploring ways to help small and medium-sized businesses build their online presence 
-                and connect with their audiences authentically. My unique perspective as a student gives me 
-                fresh insights into digital trends and emerging social platforms.
+                I enjoy working across the full development stack, 
+                from designing databases and building REST APIs to creating responsive user interfaces. 
+                My experience spans multiple programming languages and frameworks, 
+                and I'm always eager to tackle new technical challenges.
+
               </p>
               <p>
-                I'm excited to combine my academic knowledge with practical social media strategies to help 
-                businesses thrive in the digital space. Let's grow together and create meaningful online connections!
+                Currently seeking internship opportunities to apply my technical skills in real-world projects and learn 
+                from experienced software engineers.
               </p>
               
               <p className="mt-8">Here are a few technologies I've been working with recently:</p>
@@ -63,16 +66,22 @@ const About: React.FC = () => {
                   <span className="text-green mr-2">▹</span> HTML & CSS
                 </li>
                 <li className="flex items-center">
-                  <span className="text-green mr-2">▹</span> React
+                  <span className="text-green mr-2">▹</span> React 
                 </li>
                 <li className="flex items-center">
-                  <span className="text-green mr-2">▹</span> Python
+                  <span className="text-green mr-2">▹</span> Python 
                 </li>
                 <li className="flex items-center">
-                  <span className="text-green mr-2">▹</span> Java
+                  <span className="text-green mr-2">▹</span> Node.js 
                 </li>
                 <li className="flex items-center">
-                  <span className="text-green mr-2">▹</span> Content Creation
+                  <span className="text-green mr-2">▹</span> MySQL 
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green mr-2">▹</span> Java 
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green mr-2">▹</span> Git/GitHub 
                 </li>
               </ul>
             </div>
