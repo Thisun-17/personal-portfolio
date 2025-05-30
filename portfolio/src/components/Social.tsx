@@ -33,7 +33,7 @@ const Social: React.FC<SocialProps> = ({ showContent }) => {
         </li>
         <li>
           <a 
-            href="https://twitter.com/" 
+            href="https://x.com/thisun_s" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-light-slate hover:text-green hover:-translate-y-1 transition-all duration-200"
