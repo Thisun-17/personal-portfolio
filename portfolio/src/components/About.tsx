@@ -94,7 +94,7 @@ const About: React.FC = () => {
                 <div className="absolute inset-0 bg-green/20 mix-blend-multiply group-hover:bg-transparent transition duration-500"></div>
                 <div className="relative">
                   <img 
-                    src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    src="" 
                     alt="Profile Photo" 
                     className="w-full rounded-md"
                   />
