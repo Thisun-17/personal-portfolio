@@ -93,10 +93,11 @@ const About: React.FC = () => {
               <div className="relative max-w-xs mx-auto overflow-hidden bg-light-navy rounded-md">
                 <div className="absolute inset-0 bg-green/20 mix-blend-multiply group-hover:bg-transparent transition duration-500"></div>
                 <div className="relative">
-                  <img 
-                    src="" 
-                    alt="Profile Photo" 
-                    className="w-full rounded-md"
+                  <img
+                    src="/profile.jpg"
+                    alt="Thisun — portrait"
+                    className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover shadow-lg"
+                    loading="lazy"
                   />
                 </div>
               </div>
