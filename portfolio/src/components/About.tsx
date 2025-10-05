@@ -88,18 +88,14 @@ const About: React.FC = () => {
           </div>
           
           <div className={`transition-all duration-500 fadein delay-300 ${isVisible ? 'show' : ''}`}>
-            <div className="relative group">
-              <div className="absolute -inset-1.5 bg-green/20 rounded-md blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
-              <div className="relative max-w-xs mx-auto overflow-hidden bg-light-navy rounded-md">
-                <div className="absolute inset-0 bg-green/20 mix-blend-multiply group-hover:bg-transparent transition duration-500"></div>
-                <div className="relative">
-                  <img
-                    src="/profile.jpg"
-                    alt="Thisun — portrait"
-                    className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover shadow-lg"
-                    loading="lazy"
-                  />
-                </div>
+            <div className="flex justify-center">
+              <div className="max-w-xs mx-auto">
+                <img
+                  src="/profile.jpg"
+                  alt="Thisun — portrait"
+                  className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover shadow-lg"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
